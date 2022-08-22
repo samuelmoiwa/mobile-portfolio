@@ -261,8 +261,7 @@ li {
 .btn-sm:hover,
 .btn-md:hover,
 .btn-lg:hover,
-.btn-xxl:hover,
-.Get-In-Touch-btn {
+.btn-xxl:hover {
   cursor: pointer;
   background-color: #6070ff;
   box-shadow: 0 0 16px rgba(64, 83, 252, 0.24);
@@ -273,8 +272,7 @@ li {
 .btn-sm:active,
 .btn-md:active,
 .btn-lg:active,
-.btn-xxl:active,
-.Get-In-Touch-btn {
+.btn-xxl:active {
   cursor: pointer;
   background-color: #fff;
   border: 1px solid #7f8cff;
