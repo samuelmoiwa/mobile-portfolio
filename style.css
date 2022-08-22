@@ -261,7 +261,8 @@ li {
 .btn-sm:hover,
 .btn-md:hover,
 .btn-lg:hover,
-.btn-xxl:hover {
+.btn-xxl:hover,
+.Get-In-Touch-btn {
   cursor: pointer;
   background-color: #6070ff;
   box-shadow: 0 0 16px rgba(64, 83, 252, 0.24);
@@ -272,7 +273,8 @@ li {
 .btn-sm:active,
 .btn-md:active,
 .btn-lg:active,
-.btn-xxl:active {
+.btn-xxl:active,
+.Get-In-Touch-btn {
   cursor: pointer;
   background-color: #fff;
   border: 1px solid #7f8cff;
@@ -478,16 +480,14 @@ hr {
   height: 48px;
   font-weight: 500;
   font-size: 17px;
-  line-height: 24px;
   color: #6070ff;
   background: #fff;
   border-radius: 8px;
   border-style: none;
   font-family: var(--font-family);
-  cursor: pointer;
   margin-top: 20px;
   margin-left: 24px;
-  float: left;
+  cursor: pointer;
 }
 
 /* ############################################## */
