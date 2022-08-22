@@ -490,8 +490,6 @@ hr {
   float: left;
 }
 
-
-/* ############################################## */
 .grid-container {
   display: grid;
   grid-template-columns: auto;
