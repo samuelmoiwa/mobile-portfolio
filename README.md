@@ -31,7 +31,7 @@ Run the command below from the terminal
 
 👤 **Daniel Adesanya**
 
-- [Daniel Adesanya](https://github.com/Ade179)
+- [Github](https://github.com/Ade179)
  
 
 ## 🤝 Contributing
