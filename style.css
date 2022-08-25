@@ -20,21 +20,32 @@
 }
 
 body {
-  max-width: 375px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   font-family: var(--font-family);
   margin: 0 auto;
   background: #f7f7f9;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 375px;
 }
 
 header {
   background-color: #fff;
-  max-width: 375px;
+  width: 100%;
 }
 
 .flex-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   color: var(--logo-color);
 }
 
@@ -66,11 +77,18 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   background-repeat: no-repeat;
   border-bottom-left-radius: 25% 100px;
-  background-image: url("images/background/header-shapes\ mobile.png");
-  background-color: #fff;
+  background-image: url("images/background/header-background.svg");
+}
+
+.hero-main-div {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 10px;
 }
 
 h2 {
@@ -81,32 +99,77 @@ h2 {
 }
 
 .name {
-  padding-left: 20px;
+  color: var(--h1-color);
+  font-size: 36px;
+  padding-left: 0;
+  font-family: var(--font-family);
 }
 
-.paragraph {
-  padding: 20px;
+.about-paragraph-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about-paragraph {
   color: var(--paragraph-color);
   font-size: 1rem;
   line-height: 24px;
   font-family: var(--font-family);
   font-weight: 400;
+  width: 100%;
 }
 
 .media_icons {
-  margin: 26px 35px 26px 21px;
   margin-top: 10px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
+  height: 20px;
+  width: 50%;
 }
 
-li {
-  margin-right: 20px;
+.media_icons-about {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  height: 20px;
+  width: 50%;
+  padding-left: 10px;
+
 }
+
 
 .connect {
-  padding-left: 20px;
   color: var(--span-color);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.socialmedia_icons_container {
+  padding-top: 10px;
+}
+
+.connect-about {
+  color: var(--span-color);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .media-icons:hover,
@@ -116,7 +179,8 @@ li {
 }
 
 .image-fluid {
-  max-width: 295px;
+  width: 100%;
+  height: auto\9;
   object-fit: cover;
 }
 
@@ -188,13 +252,14 @@ li {
 
 .btn-container-flex {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 5px;
   margin-bottom: 10px;
+  width: 200px;
 }
 
-.btn {
-  list-style: none;
-}
 
 .btn-sm {
   background-color: #ebebff;
@@ -281,13 +346,31 @@ li {
 
 /* about section starts here */
 
-.about {
-  max-width: 375px;
+.footer-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-background {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  border-top-right-radius: 50px;
+}
+
+.about-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
   margin: 0 auto;
-  background-image: url("images/background/Base\ about\ my\ self.png");
   background-repeat: no-repeat;
   border-top-right-radius: 0% 25px;
-  background-color: #f7f7f9;
 }
 
 .about-title {
@@ -296,13 +379,12 @@ li {
   font-size: 40px;
   color: var(--h2-color);
   line-height: 52px;
-  margin: 0 24px 12px 12px;
   padding-top: 114px;
-  padding-left: 10px;
+  padding-left: 0;
 }
 
 .about-btn {
-  margin-left: 20px;
+  padding: 10px;
 }
 
 .btn-resume {
@@ -318,11 +400,16 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 375px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .accordion li {
   list-style: none;
+}
+
+.media--images {
+  cursor: pointer;
 }
 
 .skill--description {
@@ -342,8 +429,8 @@ li {
 .skill {
   display: flex;
   align-items: center;
-  margin: 36px 36px 12px 36px;
-  width: 303px;
+  margin-bottom: 10px;
+  width: 100%;
   height: 66.72px;
   background-color: #f7f7f9;
 }
@@ -370,17 +457,13 @@ li {
 
 .frameworks-container,
 .skills-container {
-  width: 375px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-hr {
-  width: 327px;
-  height: 1px;
-  background-color: #dfe1e6;
-  margin: 0 auto;
+  border-bottom: solid;
+  border-radius: 0.7px;
+  border-color: #dfe1e6;
 }
 
 .framework--title-link,
@@ -395,17 +478,26 @@ hr {
 }
 
 .contact-me-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   background-color: #fff;
   padding-top: 50px;
 }
 
 .contact-me-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 779px;
-  background-image: url(images/background/contact-me-background.svg);
+  background-image: url(images/background/footer-background.svg);
 }
 
 .contact-me-header {
-  padding-top: 105px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -484,7 +576,7 @@ hr {
   border-style: none;
   font-family: var(--font-family);
   margin-top: 20px;
-  margin-left: 24px;
+  margin-left: 0;
   cursor: pointer;
 }
 
@@ -493,7 +585,7 @@ hr {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(4, auto);
-  max-width: 375px;
+  width: 80%;
   margin: 0 auto;
   justify-items: center;
   padding-bottom: 114px;
@@ -501,3 +593,36 @@ hr {
 }
 
 /* ############################################## */
+
+
+
+@media all and (max-width : 1000px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+  }
+  
+  header {
+    background-color: rgb(16, 156, 46);
+    width: 100%;
+  }
+}
+
+
+
+@media all and (max-width : 767px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 767px;
+  }
+  
+  header {
+    background-color: rgb(156, 16, 16);
+    width: 100%;
+  }
+}
+
